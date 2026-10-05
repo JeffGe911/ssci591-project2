@@ -58,7 +58,7 @@ nav a {
 }
 .eyebrow {
   font-size: 11px;
-  letter-spacing: 2.1px;
+  letter-spacing: 0.6px;
   font-weight: 750;
   line-height: 1.6;
   color: var(--muted);
@@ -86,8 +86,7 @@ h1 em {
   line-height: 1.7;
 }
 .cta {
-  display: inline-flex;
-  gap: 60px;
+  display: inline-block;
   background: var(--ink);
   color: white;
   padding: 14px 22px;
@@ -143,9 +142,22 @@ h1 em {
   right: 36px;
   font-size: 12px;
 }
+.photo {
+  margin: 0 7vw 45px;
+}
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.photo figcaption {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 8px;
+}
 .facts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   padding: 25px 7vw;
@@ -288,6 +300,15 @@ h2 {
 }
 .chapter.active h3 {
   color: var(--red);
+}
+.chapter-photo {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.photo-credit {
+  font-size: 11px;
+  color: var(--muted);
 }
 .number-marker {
   border: 2px solid white;
@@ -488,32 +509,4 @@ a:focus-visible {
   html {
     scroll-behavior: auto;
   }
-}
-
-.photo {
-  margin: 0 7vw 45px;
-}
-.photo img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.photo figcaption {
-  font-size: 11px;
-  color: var(--muted);
-  margin-top: 8px;
-}
-.chapter-photo {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-.photo-credit {
-  font-size: 11px;
-  color: var(--muted);
-}
-
-.eyebrow {
-  text-transform: none;
-  letter-spacing: 0.6px;
 }

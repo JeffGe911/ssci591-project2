@@ -145,7 +145,6 @@ if (storyUrl) {
       throw Error("Use a public ArcGIS StoryMap URL");
     document.querySelector("#storymap").src = u.href;
     document.querySelector("#storymap-link").href = u.href;
-    document.querySelector("#arcgis-section").hidden = false;
   } catch (e) {
     console.error(e.message);
   }
