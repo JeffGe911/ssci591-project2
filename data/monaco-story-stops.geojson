@@ -1,0 +1,145 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Order": 1,
+        "Name": "Sainte Dévote",
+        "Heading": "Sainte Dévote",
+        "Description": "Sainte Dévote is the first turn. From here, the track heads uphill toward Monte Carlo.",
+        "Zone": "Uphill streets",
+        "Source": "Author-curated story stops; approximate positions selected from Bacinger route and FIA circuit map",
+        "Source_URL": "https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_-_revised.pdf",
+        "Accuracy": "Approximate illustrative point; not a surveyed corner apex"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.421444,
+          43.736819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Order": 2,
+        "Name": "Casino Square",
+        "Heading": "Casino Square",
+        "Description": "The track passes Casino Square. This part of the route shows how close the circuit is to buildings and other places in the city.",
+        "Zone": "Uphill streets",
+        "Source": "Author-curated story stops; approximate positions selected from Bacinger route and FIA circuit map",
+        "Source_URL": "https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_-_revised.pdf",
+        "Accuracy": "Approximate illustrative point; not a surveyed corner apex"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.427191,
+          43.739404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Order": 3,
+        "Name": "Fairmont Hairpin",
+        "Heading": "Fairmont Hairpin",
+        "Description": "The Fairmont Hairpin is a tight turn. Its shape is easy to see on the map.",
+        "Zone": "Hairpin and tunnel",
+        "Source": "Author-curated story stops; approximate positions selected from Bacinger route and FIA circuit map",
+        "Source_URL": "https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_-_revised.pdf",
+        "Accuracy": "Approximate illustrative point; not a surveyed corner apex"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.429601,
+          43.740203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Order": 4,
+        "Name": "Tunnel",
+        "Heading": "Tunnel",
+        "Description": "After the hairpin section, the track goes through a tunnel. The map shows its location, but does not show what the tunnel looks like inside.",
+        "Zone": "Hairpin and tunnel",
+        "Source": "Author-curated story stops; approximate positions selected from Bacinger route and FIA circuit map",
+        "Source_URL": "https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_-_revised.pdf",
+        "Accuracy": "Approximate illustrative point; not a surveyed corner apex"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.429383,
+          43.738491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Order": 5,
+        "Name": "Nouvelle Chicane",
+        "Heading": "Nouvelle Chicane",
+        "Description": "The Nouvelle Chicane comes after the tunnel. The track changes direction here and continues beside Port Hercule.",
+        "Zone": "Harbor loop",
+        "Source": "Author-curated story stops; approximate positions selected from Bacinger route and FIA circuit map",
+        "Source_URL": "https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_-_revised.pdf",
+        "Accuracy": "Approximate illustrative point; not a surveyed corner apex"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.425304,
+          43.737003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Order": 6,
+        "Name": "Swimming Pool",
+        "Heading": "Swimming Pool",
+        "Description": "This section runs around the swimming pool beside the harbor. It is one of the places where the circuit follows the waterfront.",
+        "Zone": "Harbor loop",
+        "Source": "Author-curated story stops; approximate positions selected from Bacinger route and FIA circuit map",
+        "Source_URL": "https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_-_revised.pdf",
+        "Accuracy": "Approximate illustrative point; not a surveyed corner apex"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.422472,
+          43.734125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Order": 7,
+        "Name": "La Rascasse",
+        "Heading": "La Rascasse",
+        "Description": "La Rascasse is near the end of the lap. After the last turns, the track returns to the start-finish straight.",
+        "Zone": "Harbor loop",
+        "Source": "Author-curated story stops; approximate positions selected from Bacinger route and FIA circuit map",
+        "Source_URL": "https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_-_revised.pdf",
+        "Accuracy": "Approximate illustrative point; not a surveyed corner apex"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.423393,
+          43.732712
+        ]
+      }
+    }
+  ]
+}

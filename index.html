@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SSCI 591 Project 2: Monaco - A City Becomes a Circuit</title>
+    <link rel="stylesheet" href="vendor/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#home">MONACO<span> / SPATIAL STORIES</span></a>
+      <nav aria-label="Main">
+        <a href="#arcgis-section">StoryMap</a><a href="#about">About the data</a
+        ><a href="#sources">Sources</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">SSCI 591 Project 2</p>
+          <h1>Monaco<br /><em>F1 Circuit Map</em></h1>
+          <p class="intro">
+            A map of the Monaco F1 circuit and seven places along the route.
+          </p>
+          <a class="cta" href="#arcgis-section"
+            >Explore the StoryMap <span></span
+          ></a>
+          <p class="byline">
+            A Web GIS project by Jeff Ge | SSCI 591 | Project 2
+          </p>
+        </div>
+        <div class="hero-art" aria-label="Diagram of the Monaco circuit">
+          <svg
+            id="circuit-art"
+            viewBox="0 0 480 540"
+            role="img"
+            aria-label="Monaco route outline"
+          ></svg
+          ><span class="art-caption"
+            >CIRCUIT DE MONACO<br /><small
+              >Route geometry | geographic north up</small
+            ></span
+          ><span class="north">N </span>
+        </div>
+      </section>
+      <figure class="photo">
+        <img
+          src="images/monaco-harbor.jpg"
+          alt="Monaco harbor during the 2011 Grand Prix weekend"
+        />
+        <figcaption>
+          Monaco harbor, 2011. Photo:
+          <a href="https://commons.wikimedia.org/wiki/File:Panorama_Monaco.jpg"
+            >Niels Mickers</a
+          >,
+          <a href="https://creativecommons.org/licenses/by/3.0/nl/"
+            >CC BY 3.0 NL</a
+          >. Original panorama; displayed at a smaller size.
+        </figcaption>
+      </figure>
+      <section class="facts" aria-label="Circuit context">
+        <div>
+          <strong>3.337 <small>km</small></strong
+          ><span>Official circuit length (FIA, 2025)</span>
+        </div>
+        <div>
+          <strong>7 <small>stops</small></strong
+          ><span>Locations on the route</span>
+        </div>
+        <div>
+          <strong>1 <small>city</small></strong
+          ><span>Streets connected by a lap</span>
+        </div>
+      </section>
+      <section id="arcgis-section" class="native-story">
+        <p class="eyebrow">StoryMap</p>
+        <h2>A city becomes a circuit</h2>
+        <p>Scroll through the story and explore its interactive web map.</p>
+        <iframe
+          id="storymap"
+          title="SSCI 591 Project 2: Monaco StoryMap"
+          src="https://storymaps.arcgis.com/stories/a723b5dde31e48ce8bcf65975f4aba6f"
+          loading="lazy"
+          allowfullscreen
+        ></iframe
+        ><a
+          id="storymap-link"
+          href="https://storymaps.arcgis.com/stories/a723b5dde31e48ce8bcf65975f4aba6f"
+          target="_blank"
+          rel="noopener"
+          >Open the StoryMap in a new tab
+        </a>
+      </section>
+      <section id="explore" class="explore">
+        <div class="map-panel">
+          <div class="map-heading">
+            <div>
+              <p class="eyebrow">Circuit map</p>
+              <h2>The urban loop</h2>
+            </div>
+            <button id="overview" type="button">Full route</button>
+          </div>
+          <div
+            id="map"
+            role="region"
+            aria-label="Interactive Monaco circuit map"
+          ></div>
+          <div class="legend">
+            <span><i class="route-key"></i> Circuit route</span
+            ><span><i class="point-key"></i> Story stop</span
+            ><span id="map-status" aria-live="polite"
+              >Select a stop or scroll the story.</span
+            >
+          </div>
+        </div>
+        <div class="chapters" id="chapters">
+          <div class="chapter-opening">
+            <p class="eyebrow">Seven locations</p>
+            <h2>Explore the Monaco circuit.</h2>
+            <p>
+              Scroll through seven places, or select a numbered point on the
+              map. Use "Full route" to restore the overview.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="reflection">
+        <p class="eyebrow">Map summary</p>
+        <h2>What the map shows</h2>
+        <p>
+          The circuit connects several parts of Monaco in one short route. Some
+          sections run uphill, while others follow the harbor. The map helps
+          readers see how these places fit together. It does not include live
+          road closures or race-day access information.
+        </p>
+      </section>
+      <section id="about" class="about">
+        <div>
+          <p class="eyebrow">Data sources</p>
+          <h2>About the data</h2>
+        </div>
+        <div>
+          <h3>Route & story stops</h3>
+          <p>
+            The route is adapted from Tomislav Bacinger's unofficial,
+            MIT-licensed GeoJSON dataset (Bacinger, n.d.). Seven approximate
+            story stops were curated for this project, referencing the FIA's
+            2025 circuit map (Fédération Internationale de l'Automobile [FIA],
+            2025). The seven locations are approximate.
+          </p>
+          <h3>Coordinates & limits</h3>
+          <p>
+            Both GeoJSON layers use WGS 84 longitude and latitude (EPSG:4326).
+            The preview basemap uses Web Mercator. The 3.337 km figure comes
+            from FIA documentation (FIA, 2025).
+          </p>
+          <div class="downloads">
+            <a href="data/monaco-route.geojson" download>Route GeoJSON </a
+            ><a href="data/monaco-story-stops.geojson" download
+              >Story stops GeoJSON </a
+            ><a href="data/monaco-story-stops.csv" download>Story stops CSV </a>
+          </div>
+        </div>
+      </section>
+      <section class="sources" id="sources">
+        <p class="eyebrow">Sources and credits</p>
+        <h2>Further reading</h2>
+        <ol>
+          <li>
+            Fédération Internationale de l'Automobile. (2025, May 22).
+            <a
+              href="https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_-_revised.pdf"
+              target="_blank"
+              rel="noopener"
+              >Circuit map-Monaco 2025-Revised</a
+            >. Official length and circuit-map reference.
+          </li>
+          <li>
+            Bacinger, T. (n.d.).
+            <a
+              href="https://github.com/bacinger/f1-circuits"
+              target="_blank"
+              rel="noopener"
+              >f1-circuits</a
+            >
+            [GeoJSON dataset]. Retrieved October 4, 2026.
+            <a href="data/LICENSE.txt">MIT license</a>.
+          </li>
+          <li>
+            Basemap ©
+            <a
+              href="https://www.openstreetmap.org/copyright"
+              target="_blank"
+              rel="noopener"
+              >OpenStreetMap contributors</a
+            >. Preview mapping with
+            <a href="https://leafletjs.com" target="_blank" rel="noopener"
+              >Leaflet</a
+            >, <a href="vendor/LICENSE.txt">BSD license</a>.
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <span>Monaco F1 Circuit Map</span
+      ><span>SSCI 591 | Project 2 | October 2026</span>
+    </footer>
+    <script src="vendor/leaflet.js"></script>
+    <script src="project-data.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
